@@ -1,0 +1,7 @@
+version: "3"
+
+services:
+  holadocker:
+    build: .
+    ports:
+      - 83:80
