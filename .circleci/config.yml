@@ -11,4 +11,4 @@ jobs:
       - run: docker login -u $DOCKER_USER -p $DOCKER_PASS
       - run: docker build -t xhos1234/hola-docker:$CIRCLE_SHA1 . 
       - run: docker push xhos1234/hola-docker:$CIRCLE_SHA1 
-      - run: ssh -o StrictHostKeyChecking=no root@mos1234.tk "/bin/bash /home/src/docker2-circleci/deploy.sh"
+      - run: ssh -o StrictHostKeyChecking=no root@159.89.140.196 "/bin/bash /home/src/docker2-circleci/deploy.sh"
