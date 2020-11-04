@@ -10,7 +10,7 @@ services:
 
   nginx-proxy:
     image: jwilder/nginx-proxy
-    restart: always
+    restart: always
     ports:
       - "80:80"
       - "443:443"
