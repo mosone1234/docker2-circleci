@@ -9,6 +9,6 @@ jobs:
             - "94:97:e6:9c:e9:70:c4:3b:12:92:be:6d:8e:35:7d:7e"
       - checkout
       - run: docker login -u $DOCKER_USER -p $DOCKER_PASS
-      - run: docker build -t docker2_holadocker:$CIRCLE_SHA1 . 
-      - run: docker push docker2_holadocker:$CIRCLE_SHA1 
-      - run: ssh -o StrictHostKeyChecking=no root@mos1234.tk "/bin/bash /root/docker/deploy.sh"
+      - run: docker build -t xhos1234/hola-docker:$CIRCLE_SHA1 . 
+      - run: docker push xhos1234/hola-docker:$CIRCLE_SHA1 
+      - run: ssh -o StrictHostKeyChecking=no root@mos1234.tk "/bin/bash /home/src/docker2-circleci/deploy.sh"
